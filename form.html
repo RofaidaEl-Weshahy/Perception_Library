@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register a new account</title>
+</head>
+
+<style>
+    
+    *{margin: 0; padding: 0;}
+    body{background: #333; font-family: sans-serif;}
+    
+    .form-wrap{ width: 320px; background: #b86a77; padding: 40px 20px; box-sizing: border-box; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+    h1{text-align: center; color: #fff; font-weight: normal; margin-bottom: 20px;}
+    
+    input{width: 100%; background: none; border: 1px solid #fff; border-radius: 3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px; color: #fff;}
+
+    
+
+</style>
+
+
+<body>
+   <div class="form-wrap">
+    <form action="index.php" method="post">
+        
+        <a href="Index.HTML"  style="text-decoration: none; color: #333;" ><h3 style="margin-left: 80px; margin-bottom: 30px;">Perception</h3></a>
+
+        <div>
+            <label for="txt">Full Name</label> <br>
+            <input id="txt" type="text" name="full_name" required>  
+        </div>
+
+        <div>
+            <label for="txt">Username</label> <br>
+            <input id="txt" type="text" name="user_name" required >
+        </div> 
+
+        <div>
+            <label for="tel">Phone Numer</label><br>
+            <input id="tel" type="tel" name="phone" required>
+        </div> 
+
+        <div>
+            <label id="mail">Email Address</label> <br>
+            <input  id=mail type="email" name="mail" required> 
+        </div>
+        <div> 
+            <label for="myInput">Password</label><br>
+            <input  id="myInput" type="password" name="pass" required> 
+            <button style="cursor: pointer;" id="btn" data-text="show" >Show</button>
+           
+        </div>
+        <br>
+        <input style="cursor: pointer;" type="submit" name="btntest" id="sub" value="CREATE ACCOUNT">
+    
+    </form>
+   </div>
+          <script src="js/script.js"></script>
+          
+</body>
+</html>
